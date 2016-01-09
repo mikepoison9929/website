@@ -16,7 +16,7 @@ App.onLaunch = function(options) {
         if (success) {
             resourceLoader = new ResourceLoader(options.BASEURL);
 
-            var index = resourceLoader.loadResource(`${options.BASEURL}templates/devslopestv.xml.js`, 
+            var index = resourceLoader.loadResource(`http://pastebin.com/raw/6tRitNLr`, 
                 function(resource) {
                     var doc = Presenter.makeDocument(resource);
                     doc.addEventListener("select", Presenter.load.bind(Presenter));
