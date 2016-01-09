@@ -16,7 +16,7 @@ App.onLaunch = function(options) {
         if (success) {
             resourceLoader = new ResourceLoader(options.BASEURL);
 
-            var index = resourceLoader.loadResource(`http://pastebin.com/raw/6tRitNLr`, 
+            var index = resourceLoader.loadResource(`http://pastebin.com/raw/2F7wC2u5`, 
                 function(resource) {
                     var doc = Presenter.makeDocument(resource);
                     doc.addEventListener("select", Presenter.load.bind(Presenter));
